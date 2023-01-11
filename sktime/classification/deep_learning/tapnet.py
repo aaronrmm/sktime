@@ -102,6 +102,7 @@ class TapNetClassifier(BaseDeepClassifier):
         activation="sigmoid",
         use_bias=True,
         use_att=True,
+        use_ss=False,
         use_lstm=True,
         use_cnn=True,
         random_state=None,
@@ -123,6 +124,7 @@ class TapNetClassifier(BaseDeepClassifier):
         self.filter_sizes = filter_sizes
         self.activation = activation
         self.use_att = use_att
+        self.use_ss = use_ss
         self.use_bias = use_bias
 
         self.dilation = dilation
